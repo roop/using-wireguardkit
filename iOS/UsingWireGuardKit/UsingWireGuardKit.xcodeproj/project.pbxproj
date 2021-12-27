@@ -18,6 +18,7 @@
 		6F98A9B42778F28D0019F7B5 /* PacketTunnelProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F98A9B32778F28D0019F7B5 /* PacketTunnelProvider.swift */; };
 		6F98A9B92778F28D0019F7B5 /* TunnelExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 6F98A9B02778F28D0019F7B5 /* TunnelExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		6F98A9BF2778F6AE0019F7B5 /* Developer.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 6F98A9BE2778F6AE0019F7B5 /* Developer.xcconfig */; };
+		6F98A9C32779C5B50019F7B5 /* WireGuardKit in Frameworks */ = {isa = PBXBuildFile; productRef = 6F98A9C22779C5B50019F7B5 /* WireGuardKit */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,6 +68,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6F98A9C32779C5B50019F7B5 /* WireGuardKit in Frameworks */,
 				6F98A9AB2778F1E70019F7B5 /* NetworkExtension.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -153,6 +155,9 @@
 				6F98A9B82778F28D0019F7B5 /* PBXTargetDependency */,
 			);
 			name = UsingWireGuardKit;
+			packageProductDependencies = (
+				6F98A9C22779C5B50019F7B5 /* WireGuardKit */,
+			);
 			productName = UsingWireGuardKit;
 			productReference = 6F98A9912778F1B40019F7B5 /* UsingWireGuardKit.app */;
 			productType = "com.apple.product-type.application";
@@ -201,6 +206,9 @@
 				Base,
 			);
 			mainGroup = 6F98A9882778F1B40019F7B5;
+			packageReferences = (
+				6F98A9C12779C5B50019F7B5 /* XCRemoteSwiftPackageReference "wireguard-apple" */,
+			);
 			productRefGroup = 6F98A9922778F1B40019F7B5 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -541,6 +549,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		6F98A9C12779C5B50019F7B5 /* XCRemoteSwiftPackageReference "wireguard-apple" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://git.zx2c4.com/wireguard-apple";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		6F98A9C22779C5B50019F7B5 /* WireGuardKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6F98A9C12779C5B50019F7B5 /* XCRemoteSwiftPackageReference "wireguard-apple" */;
+			productName = WireGuardKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 6F98A9892778F1B40019F7B5 /* Project object */;
 }
