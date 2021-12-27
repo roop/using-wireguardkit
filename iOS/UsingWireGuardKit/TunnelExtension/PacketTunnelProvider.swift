@@ -11,10 +11,15 @@ class PacketTunnelProvider: NEPacketTunnelProvider {
 
     override func startTunnel(options: [String : NSObject]?, completionHandler: @escaping (Error?) -> Void) {
         // Add code here to start the process of connecting the tunnel.
+
+        // Tell the OS that the tunnel is ready
+        NSLog("PacketTunnelProvider: Starting tunnel")
+        completionHandler(nil)
     }
     
     override func stopTunnel(with reason: NEProviderStopReason, completionHandler: @escaping () -> Void) {
         // Add code here to start the process of stopping the tunnel.
+        NSLog("PacketTunnelProvider: Stopping tunnel")
         completionHandler()
     }
     
