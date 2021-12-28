@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		6F3B5452277BAA53006B54BC /* WireGuardKit in Frameworks */ = {isa = PBXBuildFile; productRef = 6F3B5451277BAA53006B54BC /* WireGuardKit */; };
 		6F3B546C277BAEA0006B54BC /* TunnelConfiguration+WgQuickConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F3B546B277BAEA0006B54BC /* TunnelConfiguration+WgQuickConfig.swift */; };
+		6F3B546E277BB47E006B54BC /* String+ArrayConversion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F3B546D277BB47E006B54BC /* String+ArrayConversion.swift */; };
 		6F98A9952778F1B40019F7B5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F98A9942778F1B40019F7B5 /* AppDelegate.swift */; };
 		6F98A9972778F1B40019F7B5 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F98A9962778F1B40019F7B5 /* SceneDelegate.swift */; };
 		6F98A9992778F1B40019F7B5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F98A9982778F1B40019F7B5 /* ViewController.swift */; };
@@ -56,6 +57,7 @@
 
 /* Begin PBXFileReference section */
 		6F3B546B277BAEA0006B54BC /* TunnelConfiguration+WgQuickConfig.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "TunnelConfiguration+WgQuickConfig.swift"; sourceTree = "<group>"; };
+		6F3B546D277BB47E006B54BC /* String+ArrayConversion.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+ArrayConversion.swift"; sourceTree = "<group>"; };
 		6F98A9912778F1B40019F7B5 /* UsingWireGuardKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UsingWireGuardKit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6F98A9942778F1B40019F7B5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6F98A9962778F1B40019F7B5 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -141,6 +143,7 @@
 		6F98A9B22778F28D0019F7B5 /* TunnelExtension */ = {
 			isa = PBXGroup;
 			children = (
+				6F3B546D277BB47E006B54BC /* String+ArrayConversion.swift */,
 				6F3B546B277BAEA0006B54BC /* TunnelConfiguration+WgQuickConfig.swift */,
 				6F98A9B32778F28D0019F7B5 /* PacketTunnelProvider.swift */,
 				6F98A9B52778F28D0019F7B5 /* Info.plist */,
@@ -294,6 +297,7 @@
 			files = (
 				6F3B546C277BAEA0006B54BC /* TunnelConfiguration+WgQuickConfig.swift in Sources */,
 				6F98A9B42778F28D0019F7B5 /* PacketTunnelProvider.swift in Sources */,
+				6F3B546E277BB47E006B54BC /* String+ArrayConversion.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
