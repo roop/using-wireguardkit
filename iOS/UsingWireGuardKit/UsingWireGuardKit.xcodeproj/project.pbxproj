@@ -139,6 +139,22 @@
 		};
 /* End PBXGroup section */
 
+/* Begin PBXLegacyTarget section */
+		6F3B5447277BA590006B54BC /* WireGuardGoBridge */ = {
+			isa = PBXLegacyTarget;
+			buildArgumentsString = "$(ACTION)";
+			buildConfigurationList = 6F3B5448277BA590006B54BC /* Build configuration list for PBXLegacyTarget "WireGuardGoBridge" */;
+			buildPhases = (
+			);
+			buildToolPath = /usr/bin/perl;
+			dependencies = (
+			);
+			name = WireGuardGoBridge;
+			passBuildSettingsInEnvironment = 1;
+			productName = WireGuardGoBridge;
+		};
+/* End PBXLegacyTarget section */
+
 /* Begin PBXNativeTarget section */
 		6F98A9902778F1B40019F7B5 /* UsingWireGuardKit */ = {
 			isa = PBXNativeTarget;
@@ -189,6 +205,9 @@
 				LastSwiftUpdateCheck = 1300;
 				LastUpgradeCheck = 1300;
 				TargetAttributes = {
+					6F3B5447277BA590006B54BC = {
+						CreatedOnToolsVersion = 13.0;
+					};
 					6F98A9902778F1B40019F7B5 = {
 						CreatedOnToolsVersion = 13.0;
 					};
@@ -215,6 +234,7 @@
 			targets = (
 				6F98A9902778F1B40019F7B5 /* UsingWireGuardKit */,
 				6F98A9AF2778F28D0019F7B5 /* TunnelExtension */,
+				6F3B5447277BA590006B54BC /* WireGuardGoBridge */,
 			);
 		};
 /* End PBXProject section */
@@ -289,6 +309,33 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		6F3B5449277BA590006B54BC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEBUGGING_SYMBOLS = YES;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = R2NV2FHE22;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		6F3B544A277BA590006B54BC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = R2NV2FHE22;
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 		6F98A9A32778F1B50019F7B5 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 6F98A9BE2778F6AE0019F7B5 /* Developer.xcconfig */;
@@ -521,6 +568,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		6F3B5448277BA590006B54BC /* Build configuration list for PBXLegacyTarget "WireGuardGoBridge" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6F3B5449277BA590006B54BC /* Debug */,
+				6F3B544A277BA590006B54BC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		6F98A98C2778F1B40019F7B5 /* Build configuration list for PBXProject "UsingWireGuardKit" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
