@@ -80,6 +80,22 @@ extension AppDelegate {
             // It would be good to provide the server's domain name or IP address.
             protocolConfiguration.serverAddress = "server"
 
+            let wgQuickConfig = """
+            [Interface]
+            PrivateKey = <private-key>
+            Address = <ip-addresses>
+            DNS = <dns-server-ip-addresses>
+
+            [Peer]
+            PublicKey = <public-key>
+            AllowedIPs = <use 0.0.0.0/0,::0/0 to route everything>
+            Endpoint = <server>:51820
+            """
+
+            protocolConfiguration.providerConfiguration = [
+                "wgQuickConfig": wgQuickConfig
+            ]
+
             tunnelManager.protocolConfiguration = protocolConfiguration
             tunnelManager.isEnabled = true
 
