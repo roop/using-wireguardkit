@@ -22,6 +22,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		6F3B544F277BAA2D006B54BC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6F98A9892778F1B40019F7B5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6F3B5447277BA590006B54BC;
+			remoteInfo = WireGuardGoBridge;
+		};
 		6F98A9B72778F28D0019F7B5 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 6F98A9892778F1B40019F7B5 /* Project object */;
@@ -190,6 +197,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				6F3B5450277BAA2D006B54BC /* PBXTargetDependency */,
 			);
 			name = TunnelExtension;
 			productName = TunnelExtension;
@@ -283,6 +291,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		6F3B5450277BAA2D006B54BC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6F3B5447277BA590006B54BC /* WireGuardGoBridge */;
+			targetProxy = 6F3B544F277BAA2D006B54BC /* PBXContainerItemProxy */;
+		};
 		6F98A9B82778F28D0019F7B5 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 6F98A9AF2778F28D0019F7B5 /* TunnelExtension */;
