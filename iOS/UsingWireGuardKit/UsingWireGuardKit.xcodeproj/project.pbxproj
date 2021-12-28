@@ -142,11 +142,12 @@
 /* Begin PBXLegacyTarget section */
 		6F3B5447277BA590006B54BC /* WireGuardGoBridge */ = {
 			isa = PBXLegacyTarget;
-			buildArgumentsString = "$(ACTION)";
+			buildArgumentsString = "$(PROJECT_DIR)/../../scripts/build_wireguard_go_bridge.pl";
 			buildConfigurationList = 6F3B5448277BA590006B54BC /* Build configuration list for PBXLegacyTarget "WireGuardGoBridge" */;
 			buildPhases = (
 			);
 			buildToolPath = /usr/bin/perl;
+			buildWorkingDirectory = "";
 			dependencies = (
 			);
 			name = WireGuardGoBridge;
