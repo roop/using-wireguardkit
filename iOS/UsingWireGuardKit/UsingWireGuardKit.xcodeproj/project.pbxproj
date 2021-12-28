@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6F3B5452277BAA53006B54BC /* WireGuardKit in Frameworks */ = {isa = PBXBuildFile; productRef = 6F3B5451277BAA53006B54BC /* WireGuardKit */; };
 		6F98A9952778F1B40019F7B5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F98A9942778F1B40019F7B5 /* AppDelegate.swift */; };
 		6F98A9972778F1B40019F7B5 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F98A9962778F1B40019F7B5 /* SceneDelegate.swift */; };
 		6F98A9992778F1B40019F7B5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F98A9982778F1B40019F7B5 /* ViewController.swift */; };
@@ -84,6 +85,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6F3B5452277BAA53006B54BC /* WireGuardKit in Frameworks */,
 				6F98A9B12778F28D0019F7B5 /* NetworkExtension.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -200,6 +202,9 @@
 				6F3B5450277BAA2D006B54BC /* PBXTargetDependency */,
 			);
 			name = TunnelExtension;
+			packageProductDependencies = (
+				6F3B5451277BAA53006B54BC /* WireGuardKit */,
+			);
 			productName = TunnelExtension;
 			productReference = 6F98A9B02778F28D0019F7B5 /* TunnelExtension.appex */;
 			productType = "com.apple.product-type.app-extension";
@@ -632,6 +637,11 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		6F3B5451277BAA53006B54BC /* WireGuardKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6F98A9C12779C5B50019F7B5 /* XCRemoteSwiftPackageReference "wireguard-apple" */;
+			productName = WireGuardKit;
+		};
 		6F98A9C22779C5B50019F7B5 /* WireGuardKit */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 6F98A9C12779C5B50019F7B5 /* XCRemoteSwiftPackageReference "wireguard-apple" */;
