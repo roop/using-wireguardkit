@@ -118,13 +118,17 @@ created xcconfig, click _Add_.
     create an App Delegate file and set it using the
     `UIApplicationDelegateAdaptor` property wrapper).
 21. Add code in the App Delegate to save the tunnel configuration and
-    start the tunnel.
+    start the tunnel. 
+    (Commit: 
+    [iOS](https://github.com/roop/using-wireguardkit/commit/04064ea))
 
 ### Make the tunnel extension succeed
 
 22. Open PacketTunnelProvider.swift in the tunnel extension. Make the
     `startTunnel` function call the supplied completion handler, so that the OS
     considers the tunnel to be established.
+    (Commit:
+    [iOS](https://github.com/roop/using-wireguardkit/commit/f12bb15))
 
 ### Run the app
 
@@ -156,6 +160,7 @@ because the `${BUILD_DIR%Build/*}` used there doesn't seem to work in Xcode 13
 (and maybe in Xcode 12 too).
 
 27. Write a script to build WireGuardGoBridge.
+    ([Commit](https://github.com/roop/using-wireguardkit/commit/66f5dee))
 28. In Xcode, go to _File > New > Target_, select _External Build System_ under
     the _Other_ tab, click _Next_. Set _Product Name_ as "WireGuardGoBridge".
     We're using a Perl script, so we set _Build Tool_ as "/usr/bin/perl".
@@ -187,8 +192,13 @@ because the `${BUILD_DIR%Build/*}` used there doesn't seem to work in Xcode 13
 34. Copy `Sources/Shared/Model/TunnelConfiguration+WgQuickConfig.swift` and
     `Sources/Shared/Model/String+ArrayConversion.swift` from
     the wireguard-apple repository and add them to the tunnel extension.
-35. Modify PacketTunnelProvider.swift in the tunnel extension to use
-    WireGuardAdapter from WireGuardKit.
-36. Modify AppDelegate to pass the WireGuard config to the tunnel extension.
+35. Import WireGuardKit in "TunnelConfiguration+WgQuickConfig.swift"
+    (Commit:
+    [iOS](https://github.com/roop/using-wireguardkit/commit/5054b32))
+36. Modify PacketTunnelProvider.swift in the tunnel extension to use
+    WireGuardAdapter from WireGuardKit. (iOS: bbe787b)
+37. Modify AppDelegate to pass the WireGuard config to the tunnel extension.
+    (Commit:
+    [iOS](https://github.com/roop/using-wireguardkit/commit/252532e))
 
 <small>Copyright 2021-22 Roopesh Chander. Licensed under <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/80x15.png" /></a>.</small>
