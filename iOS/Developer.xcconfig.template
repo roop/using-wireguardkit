@@ -1,0 +1,4 @@
+// Copy this to Developer.xcconfig and fill up
+
+APP_ID = <app bundle id>
+DEVELOPMENT_TEAM = <Apple Developer account id>
