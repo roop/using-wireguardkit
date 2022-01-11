@@ -196,7 +196,7 @@ because the `${BUILD_DIR%Build/*}` used there doesn't seem to work in Xcode 13
     (Commit:
     [iOS](https://github.com/roop/using-wireguardkit/commit/5054b32))
 36. Modify PacketTunnelProvider.swift in the tunnel extension to use
-    WireGuardAdapter from WireGuardKit. (iOS: bbe787b)
+    WireGuardAdapter from WireGuardKit. (Commit: [iOS](https://github.com/roop/using-wireguardkit/commit/bbe787b))
 37. Modify AppDelegate to pass the WireGuard config to the tunnel extension.
     (Commit:
     [iOS](https://github.com/roop/using-wireguardkit/commit/252532e))
